@@ -1,0 +1,35 @@
+const paths = {
+  gift: '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8H7.5A2.5 2.5 0 1 1 10 5.5L12 8Zm0 0h4.5A2.5 2.5 0 1 0 14 5.5L12 8Z"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  heart: '<path d="M20.8 8.6c0 4.3-8.8 9.5-8.8 9.5S3.2 12.9 3.2 8.6a4.6 4.6 0 0 1 8.8-1.8 4.6 4.6 0 0 1 8.8 1.8Z"/>',
+  cake: '<path d="M4 21v-7h16v7H4Zm0-3c2.5 0 2.5-1.5 4-1.5s2 1.5 4 1.5 2.5-1.5 4-1.5 1.5 1.5 4 1.5M7 14v-4m5 4v-4m5 4v-4M7 7v-.5M12 7V5m5 2v-.5"/>',
+  tree: '<path d="m12 3 5 6h-2l4 5h-3l4 5H4l4-5H5l4-5H7l5-6Zm0 16v3"/>',
+  home: '<path d="m3 10 9-7 9 7M5 9v11h14V9M9 20v-6h6v6"/>',
+  sparkle: '<path d="M12 2l2.7 7.3L22 12l-7.3 2.7L12 22l-2.7-7.3L2 12l7.3-2.7L12 2Z"/>',
+  chevron: '<path d="m9 18 6-6-6-6"/>',
+  down: '<path d="m6 9 6 6 6-6"/>',
+  share: '<path d="M12 16V3m-4 4 4-4 4 4M5 11v9h14v-9"/>',
+  more: '<circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/>',
+  search: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/>',
+  grid: '<rect x="3.5" y="3.5" width="6" height="6" rx="1"/><rect x="14.5" y="3.5" width="6" height="6" rx="1"/><rect x="3.5" y="14.5" width="6" height="6" rx="1"/><rect x="14.5" y="14.5" width="6" height="6" rx="1"/>',
+  list: '<path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/>',
+  link: '<path d="M10 13.5a4 4 0 0 0 6 .5l3-3a4 4 0 0 0-5.7-5.7l-1.4 1.4m2.1 3.8a4 4 0 0 0-6-.5l-3 3a4 4 0 0 0 5.7 5.7l1.4-1.4"/>',
+  external: '<path d="M13 4h7v7m0-7-9 9m-2-7H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4"/>',
+  x: '<path d="m6 6 12 12M18 6 6 18"/>',
+  check: '<path d="m5 12 4 4L19 6"/>',
+  star: '<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2-5.5-3-5.5 3 1-6.2L3 9.6l6.2-.9L12 3Z"/>',
+  edit: '<path d="m14 6 4 4M4 20l4-.8L20 7.3 16.7 4 4.8 15.9 4 20Z"/>',
+  trash: '<path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13m-8 4v5m4-5v5"/>',
+  lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4m-4 4v2"/>',
+  copy: '<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>',
+  download: '<path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4"/>',
+  upload: '<path d="M12 15V3m-4 4 4-4 4 4M4 16v4h16v-4"/>',
+  refresh: '<path d="M20 8a8 8 0 1 0 .3 7M20 3v5h-5"/>',
+  eye: '<path d="M2 12s3.8-6 10-6 10 6 10 6-3.8 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/>',
+  sliders: '<path d="M4 7h4m4 0h8M4 17h8m4 0h4M8 4v6m8 4v6"/>',
+  menu: '<path d="M4 6h16M4 12h16M4 18h16"/>',
+};
+
+export function icon(name, size = 20) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.gift}</svg>`;
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f7">
+  <meta name="description" content="Keep the things you love in one place and share them with the people who want to make your day.">
+  <title>Wishly · My wishlists</title>
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./" aria-label="Wishly home"><span class="brand-mark" data-icon="gift"></span> wishly<span class="brand-dot">.</span></a>
+      <div id="header-actions" class="header-actions"></div>
+    </div>
+  </header>
+  <main id="app" class="shell" tabindex="-1">
+    <p class="loading">Opening Wishly…</p>
+    <noscript><p>Enable JavaScript to use Wishly.</p></noscript>
+  </main>
+  <dialog id="dialog" class="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+</body>
+</html>
